@@ -88,4 +88,23 @@ ButtonOutline.propTypes = {
   classes: PropTypes.string,
 };
 
-export { ButtonPrimary, ButtonOutline };
+/**
+ * Buy Me a Coffee Button
+ */
+const BuyMeACoffeeButton = () => {
+  return (
+    <a
+      href="https://www.buymeacoffee.com/ashansube"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img
+        src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=ashansube&button_colour=FFDD00&font_colour=000000&font_family=Poppins&outline_colour=000000&coffee_colour=ffffff"
+        alt="Buy me a coffee"
+        className="h-11"
+      />
+    </a>
+  );
+};
+
+export { ButtonPrimary, ButtonOutline, BuyMeACoffeeButton };

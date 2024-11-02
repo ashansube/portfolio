@@ -6,7 +6,7 @@
 /**
  * Components
  */
-import { ButtonPrimary, ButtonOutline } from "./Button";
+import { ButtonPrimary, BuyMeACoffeeButton } from "./Button";
 
 const Hero = () => {
   return (
@@ -40,11 +40,7 @@ const Hero = () => {
           <div className="flex items-center gap-3">
             <ButtonPrimary label="Download CV" icon="download" />
 
-            <ButtonOutline
-              href="#about"
-              label="Scroll down"
-              icon="arrow_downward"
-            />
+            <BuyMeACoffeeButton />
           </div>
         </div>
 
