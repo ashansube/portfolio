@@ -10,8 +10,11 @@ import { ButtonPrimary, BuyMeACoffeeButton } from "./Button";
 
 const Hero = () => {
   return (
-    <section id="home" className="pt-28 lg:pt-36">
-      <div className="container items-center lg:grid lg:grid-cols-2 lg:gap-10">
+    <section id="home" className="pt-28 lg:pt-36 relative overflow-hidden">
+      {/* Dotted background */}
+      <div className="dotted-background"></div>
+
+      <div className="container items-center lg:grid lg:grid-cols-2 lg:gap-10 relative z-10">
         <div>
           <div className="flex items-center gap-3">
             <figure className="img-box w-9 h-9 rounded-lg">
@@ -39,7 +42,6 @@ const Hero = () => {
 
           <div className="flex items-center gap-3">
             <ButtonPrimary label="Download CV" icon="download" />
-
             <BuyMeACoffeeButton />
           </div>
         </div>
